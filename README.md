@@ -24,9 +24,9 @@ Nothing is uploaded.
 ## What I built, decided and learned
 
 - **Built:** a reproducible pipeline that ranks which of ten Renaissance
-  painters most likely made a painting. A fine-tuned ResNet-18 gets 77.7% of
-  validation paintings right and has the painter in its top three 96% of the
-  time, against 52.6% for a baseline built on hand-designed colour and
+  painters most likely made a painting. A fine-tuned ResNet-18 gets 73.7% of
+  held-out test paintings right and has the painter in its top three 89% of the
+  time, against 56–58% for baselines built on hand-designed colour and
   brushstroke features. Every number comes from a recorded GitHub Actions run.
 - **Hardest decision:** removing the accuracy claims the first version of this
   README made, which no code in the repository had produced, and saying plainly
