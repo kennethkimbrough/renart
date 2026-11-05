@@ -18,7 +18,7 @@ import shutil
 from importlib import resources
 from pathlib import Path
 
-REPO_URL = "https://github.com/kennethkimbrough/Renart"
+REPO_URL = "https://github.com/kennethkimbrough/renart"
 
 PAINTER_LABELS = {
     "albrecht-durer": "Albrecht Dürer",

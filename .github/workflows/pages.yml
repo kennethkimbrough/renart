@@ -1,7 +1,7 @@
 name: Results site
 
 # Builds the results site from the committed run named in site.toml and publishes it to the
-# gh-pages branch, which GitHub Pages serves at https://kennethkimbrough.github.io/Renart/
+# gh-pages branch, which GitHub Pages serves at https://kennethkimbrough.github.io/renart/
 # Nothing is trained or downloaded here except the ONNX model for the demo page, which the
 # training workflow published as a release (model_release in site.toml). Every number on the
 # page is read from results/.
@@ -65,7 +65,7 @@ jobs:
     steps:
       - name: Wait for the site to answer
         run: |
-          url="https://kennethkimbrough.github.io/Renart/"
+          url="https://kennethkimbrough.github.io/renart/"
           for i in $(seq 1 20); do
             code=$(curl -sL -o /dev/null -w "%{http_code}" "$url")
             echo "attempt $i: HTTP $code"
@@ -89,7 +89,7 @@ jobs:
           def main():
               import sys, time
               from playwright.sync_api import sync_playwright
-              url = "https://kennethkimbrough.github.io/Renart/demo.html"
+              url = "https://kennethkimbrough.github.io/renart/demo.html"
               with sync_playwright() as p:
                   browser = p.chromium.launch()
                   page = browser.new_page()

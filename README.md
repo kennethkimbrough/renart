@@ -13,10 +13,10 @@ provenance. The earlier README described the project in those terms with
 accuracy figures that no code in the repository produced. Those claims are
 gone.
 
-**Results site: [kennethkimbrough.github.io/Renart](https://kennethkimbrough.github.io/Renart/)**,
+**Results site: [kennethkimbrough.github.io/renart](https://kennethkimbrough.github.io/renart/)**,
 with every model's accuracy and its 95% interval, an interactive confusion
 matrix grouped by school, painter-by-painter results and the out-of-set
-check. **Try it: [the demo page](https://kennethkimbrough.github.io/Renart/demo.html)**
+check. **Try it: [the demo page](https://kennethkimbrough.github.io/renart/demo.html)**
 runs the trained network in your browser (ONNX + onnxruntime-web): drop in a
 painting, or pick one of the test paintings, and it ranks the ten painters.
 Nothing is uploaded.
@@ -122,7 +122,7 @@ Reproduce: push a change to `.github/train-request.json` with
 or run the *Train* workflow by hand. The run commits its metrics, exports the
 network to ONNX (checked against PyTorch with onnxruntime), and publishes it
 as a release such as
-[`model-run8`](https://github.com/kennethkimbrough/Renart/releases/tag/model-run8)
+[`model-run8`](https://github.com/kennethkimbrough/renart/releases/tag/model-run8)
 that the demo page serves.
 
 ## Pipeline
